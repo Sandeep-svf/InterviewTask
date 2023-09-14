@@ -42,7 +42,7 @@
 
         android:background="@drawable/border_line"
         android:hint="@string/enter_employee_phone_number"
-        android:maxLength="17"
+        android:inputType="phone"
 
 
         android:maxLines="1"
