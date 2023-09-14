@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/e_name"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/border_line"
+        android:hint="@string/enter_employee_name"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+
+
+        android:maxLines="1"
+        android:paddingStart="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.2"
+
+        app:layout_constraintWidth_percent="0.75"
+
+        ></androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/e_number"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/border_line"
+        android:hint="@string/enter_employee_phone_number"
+        android:maxLength="17"
+
+
+        android:maxLines="1"
+        android:paddingStart="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.3"
+
+        app:layout_constraintWidth_percent="0.75"
+
+        ></androidx.appcompat.widget.AppCompatEditText>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/e_address"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/border_line"
+        android:hint="@string/enter_employee_address"
+        android:inputType="text"
+        android:maxLength="100"
+
+
+        android:maxLines="1"
+        android:paddingStart="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent="0.75"
+
+        ></androidx.appcompat.widget.AppCompatEditText>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/e_save_button"
+
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/button_bg"
+        android:text="@string/save_data"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+
+        app:layout_constraintWidth_percent="0.7"
+
+
+        ></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/e_view_button"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/view_data"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintWidth_percent="0.7"></androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

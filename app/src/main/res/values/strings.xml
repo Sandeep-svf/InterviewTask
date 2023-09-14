@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InterviewTask</string>
+    <string name="enter_employee_name">Enter Employee Name</string>
+    <string name="enter_employee_phone_number">Enter Employee Phone Number</string>
+    <string name="enter_employee_address">Enter Employee Address</string>
+    <string name="save_data">Save Employee Data</string>
+    <string name="view_data">View Employee Data</string>
+</resources>

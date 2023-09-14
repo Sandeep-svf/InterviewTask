@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031764889674",
+    "project_id": "interviewtask-c15f5",
+    "storage_bucket": "interviewtask-c15f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031764889674:android:f50a589c3e396c0a0f96b3",
+        "android_client_info": {
+          "package_name": "com.sam.interviewtask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdaHaRB2nzhDG65SgZBKyJ_dZDqWYIVjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
