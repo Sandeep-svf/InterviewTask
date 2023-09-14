@@ -76,23 +76,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 /* flag = true*/
-               // callNetworkConnection()
-
-                checkNetworkConnection = CheckNetworkConnection(application)
-                checkNetworkConnection.observe(this) { isConnected ->
-                    if (isConnected) {
-                        status = true
-
-                    } else {
-                        /*// Fetch all employees
-                        val employees = database.employeeDao().getAllEmployees()*/
-                        status = false
-
-                    }
-                }
-
-
-
+                callNetworkConnection()
                 // Initializing room db
                 val database = Room.databaseBuilder(
                     applicationContext,
@@ -103,7 +87,7 @@ class MainActivity : AppCompatActivity() {
 
 
                     saveEmployeeData()
-                   // Toast.makeText(this,"Network is available", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Network is available", Toast.LENGTH_LONG).show()
                     Log.i("Sam_test","Calling A")
 
                     Thread{
@@ -145,7 +129,7 @@ class MainActivity : AppCompatActivity() {
                 }else{
                     Log.i("Sam_test", "Calling B")
 
-                   // Toast.makeText(this, "Network is not available", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Network is not available", Toast.LENGTH_LONG).show()
 
 
 
@@ -175,7 +159,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun callNetworkConnection(){
+        checkNetworkConnection = CheckNetworkConnection(application)
+        checkNetworkConnection.observe(this) { isConnected ->
+            if (isConnected) {
+                status = true
 
+            } else {
+                /*// Fetch all employees
+                val employees = database.employeeDao().getAllEmployees()*/
+                status = false
+
+            }
+        }
 
     }
     private fun saveEmployeeData() {
