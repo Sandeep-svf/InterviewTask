@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
 
         dbRef = FirebaseDatabase.getInstance().getReference("Employee")
 
+        callNetworkConnection()
+
 
         btnFetchData.setOnClickListener(){
             startActivity(Intent(this@MainActivity,FetchingActivity::class.java))
@@ -59,6 +61,10 @@ class MainActivity : AppCompatActivity() {
                 val employeePhoneData = employeePhone.text.toString()
                 val employeeAddressData = employeeAddress.text.toString()
 
+
+
+
+
                 if(employeeNameData.isEmpty()){
                     employeeName.error = "This field can't be empty"
                     return@setOnClickListener
@@ -70,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 if(employeeAddressData.isEmpty()){
-                    employeePhone.error = "This field can't be empty"
+                    employeeAddress.error = "This field can't be empty"
                     return@setOnClickListener
                 }
 
@@ -119,10 +125,6 @@ class MainActivity : AppCompatActivity() {
                         // delete data from room db
                         // delete data for avoid
                         database.employeeDao().deleteAll()
-
-
-
-
                     }.start()
 
 
@@ -199,7 +201,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun validation(): Boolean {
+ /*   private fun validation(): Boolean {
 
         // getting values form user
         val employeeNameData = employeeName.text.toString()
@@ -218,5 +220,5 @@ class MainActivity : AppCompatActivity() {
         }
 
         return true;
-    }
+    }*/
 }

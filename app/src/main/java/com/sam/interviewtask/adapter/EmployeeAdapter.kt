@@ -20,6 +20,8 @@ class EmployeeAdapter (private val employeeList: ArrayList<EmployeeModel>):
     override fun onBindViewHolder(holder: EmployeeAdapter.ViewHolder, position: Int) {
         val currentEmployee = employeeList[position]
         holder.tvEmployeeName.text = currentEmployee.employeeName
+        holder.tvEmployeephone.text = currentEmployee.employeePhoneNumber
+        holder.tvEmployeeAddress.text = currentEmployee.employeeAddress
     }
 
     override fun getItemCount(): Int {
@@ -29,5 +31,7 @@ class EmployeeAdapter (private val employeeList: ArrayList<EmployeeModel>):
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val tvEmployeeName : TextView = itemView.findViewById(R.id.tv_emp_name)
+        val tvEmployeephone : TextView = itemView.findViewById(R.id.tv_emp_phone)
+        val tvEmployeeAddress : TextView = itemView.findViewById(R.id.tv_emp_address)
     }
 }
